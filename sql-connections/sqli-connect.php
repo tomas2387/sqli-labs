@@ -10,7 +10,7 @@ $con1 = mysqli_connect($host,$dbuser,$dbpass);
 // Check connection
 if (mysqli_connect_errno($con1))
 {
-    echo "Failed to connect to MySQL: " . mysqli_connect_error();
+    echo "Failed to connect to MySQL: " . mysqli_connect_error($con);
 }
 else
 {
